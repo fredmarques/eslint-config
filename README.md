@@ -14,13 +14,13 @@
 
 Install dependencies:
 ```sh
-npm i -D eslint fredmarques/eslint-config
+npm i -D eslint @fredmarques/eslint-config
 ```
 Inside `.eslintrc.json`
 ```json
 {
   "extends": [
-    "fredmarques/eslint-config/next", 
+    "@fredmarques/eslint-config/next", 
     "next/core-web-vitals"
   ]
 }
@@ -30,12 +30,12 @@ Inside `.eslintrc.json`
 
 Install dependencies:
 ```
-npm i -D eslint fredmarques/eslint-config
+npm i -D eslint @fredmarques/eslint-config
 ```
 Inside `.eslintrc.json`
 ```json
 {
-  "extends": "fredmarques/eslint-config/react"
+  "extends": "@fredmarques/eslint-config/react"
 }
 ```
 
@@ -43,12 +43,12 @@ Inside `.eslintrc.json`
 
 Install dependencies:
 ```sh
-npm i -D eslint fredmarques/eslint-config
+npm i -D eslint @fredmarques/eslint-config
 ```
 Inside `.eslintrc.json`
 ```json
 {
-  "extends": "fredmarques/eslint-config/node"
+  "extends": "@fredmarques/eslint-config/node"
 }
 ```
 
