@@ -1,4 +1,4 @@
-# Rocketseat ESLint config
+# ESLint config
 
 ## Whats included?
 
@@ -13,14 +13,14 @@
 ### React (with Next.js)
 
 Install dependencies:
-```
-npm i -D eslint @rocketseat/eslint-config
+```sh
+npm i -D eslint fredmarques/eslint-config
 ```
 Inside `.eslintrc.json`
-```
+```json
 {
   "extends": [
-    "@rocketseat/eslint-config/next", 
+    "fredmarques/eslint-config/next", 
     "next/core-web-vitals"
   ]
 }
@@ -30,24 +30,41 @@ Inside `.eslintrc.json`
 
 Install dependencies:
 ```
-npm i -D eslint @rocketseat/eslint-config
+npm i -D eslint fredmarques/eslint-config
 ```
 Inside `.eslintrc.json`
-```
+```json
 {
-  "extends": "@rocketseat/eslint-config/react"
+  "extends": "fredmarques/eslint-config/react"
 }
 ```
 
 ### Node.js
 
 Install dependencies:
-```
-npm i -D eslint @rocketseat/eslint-config
+```sh
+npm i -D eslint fredmarques/eslint-config
 ```
 Inside `.eslintrc.json`
-```
+```json
 {
-  "extends": "@rocketseat/eslint-config/node"
+  "extends": "fredmarques/eslint-config/node"
 }
 ```
+
+## Editor setup
+
+### vscode
+Be sure you have the [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension installed. Uninstall prettier extension if you have it installed.
+
+```json
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": false
+}
+```
+
+### Credits
+This settings were inspired on [@RocketSeat's repo](https://github.com/Rocketseat/eslint-config-rocketseat)
